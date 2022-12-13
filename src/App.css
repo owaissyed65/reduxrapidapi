@@ -6,8 +6,9 @@
 }
 
 .cont {
-  background-color: yellow;
+  background-color: rgb(190, 190, 45);
   height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +49,7 @@
 .cont-child-btn>button:hover {
   background-color: rgb(212, 216, 240);
   color: black;
-  border: 2px solid rgb(55, 58, 206) ;
+  border: 2px solid rgb(55, 58, 206);
 }
 
 textarea {
@@ -57,5 +58,51 @@ textarea {
 
 textarea:focus {
   outline: none;
-  border: 2px solid red;
+  border: 2px solid rgb(248, 111, 111);
+}
+
+@media screen and (max-width:780px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .cont {
+    background-color: rgb(190, 190, 45);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* gap: 1rem; */
+  }
+
+  .drop {
+    font-size: 14px;
+    width: 8rem;
+  }
+
+  .cont-child {
+    gap: 0.2rem;
+  }
+
+  textarea {
+    font-size: 0.7rem;
+  }
+
+  .cont-child-btn>button {
+    outline: none;
+    padding: 10px 10px;
+    background-color: rgb(55, 58, 206);
+    border: 2px solid black;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+
 }
